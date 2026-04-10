@@ -1,20 +1,20 @@
 name: Node.js Package
 on:
-  push: 
+  push:
     branches: [master]
 jobs:
   build:
-    runs-on: ubuntu-latest 
-    permissions: 
+    runs-on: ubuntu-latest
+    permissions:
       contents: read
-      packages: write 
+      packages: write
     steps:
       - uses: actions/checkout@v2
       # Setup .npmrc file to publish to GitHub Packages
       - uses: actions/setup-node@v2
         with:
-          node-version: '16.x'
-          registry-url: 'https://npm.pkg.github.com'
+          node-version: "16.x"
+          registry-url: "https://npm.pkg.github.com"
       - run: yarn
       - run: yarn publish
         env:
