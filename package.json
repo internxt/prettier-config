@@ -1,16 +1,27 @@
 {
-  "name": "@internxt/prettier-config",
+  "author": "Internxt <hello@internxt.com>",
   "version": "2.0.0",
-  "description": "",
+  "name": "@internxt/prettier-config",
+  "description": "Prettier config for Internxt projects",
+  "keywords": [
+    "prettier",
+    "prettier-config",
+    "internxt"
+  ],
   "main": "index.js",
+  "files": [
+    "index.js"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "npx prettier --check .",
+    "format": "npx prettier --write .",
+    "publish:npm": "npm publish --scope=@internxt --registry=https://registry.npmjs.org/ --access public",
+    "publish:github": "npm publish --scope=@internxt --registry=https://npm.pkg.github.com --tag latest"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/internxt/prettier-config.git"
   },
-  "author": "",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/internxt/prettier-config/issues"
