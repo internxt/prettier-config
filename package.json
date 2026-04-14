@@ -1,6 +1,6 @@
 {
   "author": "Internxt <hello@internxt.com>",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "name": "@internxt/prettier-config",
   "description": "Prettier config for Internxt projects",
   "keywords": [
